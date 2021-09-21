@@ -1,0 +1,5 @@
+Newline character
+decodeUriComponent('%0A')
+
+Carriage return + newline character
+decodeUriComponent('%0D%0A')
