@@ -1,0 +1,5 @@
+# disk management utility
+diskmgmt.msc
+
+# user management utility
+lusrmgr.msc

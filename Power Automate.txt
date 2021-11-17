@@ -3,3 +3,6 @@ decodeUriComponent('%0A')
 
 Carriage return + newline character
 decodeUriComponent('%0D%0A')
+
+Time & date format
+formatDateTime(utcNow(), 'yyyy-MM-dd HH:mm:ss')

@@ -1,0 +1,17 @@
+# shutdown
+systemctl poweroff
+
+# restart
+systemctl reboot
+
+# list available drives
+sudo fdisk -l
+
+# mount new drive into certain folder
+sudo mount /dev/sdb1 /media/myusb/
+
+# ip address
+ip addr
+
+# edit hostname
+sudo nano /etc/hostname
