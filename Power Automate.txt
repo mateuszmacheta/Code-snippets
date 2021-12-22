@@ -1,8 +1,20 @@
-Newline character
+# Newline character
 decodeUriComponent('%0A')
 
-Carriage return + newline character
+# Carriage return + newline character
 decodeUriComponent('%0D%0A')
 
-Time & date format
+# Time & date format
 formatDateTime(utcNow(), 'yyyy-MM-dd HH:mm:ss')
+
+# Check for property existance
+# Will return 'None' if property does not exists OR if property's value is empty string
+if(empty(variable('someJson')?['keyName']), 'None', variable('someJson')?['keyName'])
+
+# OData filtering for Dataverse entry for a give date when column is Date only
+sspp_exchangedate eq 2021-12-21
+
+# OData filtering for Dataverse entry for a give date when column is Date & Time
+sspp_exchangedate gt 2021-12-21T00:00:00Z and sspp_exchangedate lt 2021-12-21T23:59:59Z
+
+# For formatting numbers just use Format Number step
