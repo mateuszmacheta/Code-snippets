@@ -1,0 +1,5 @@
+# Measure script execution time
+
+$sw = [system.diagnostics.stopwatch]::StartNew()
+# ... put script that you measure execution time here ...
+Write-Host "Finished after $($sw.Elapsed.TotalMinutes) minutes"
