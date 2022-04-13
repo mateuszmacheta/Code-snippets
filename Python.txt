@@ -1,0 +1,21 @@
+# Opening files for reading
+filestream = open('aiports.json','r')
+
+# read one line
+line = filestream.readLine()
+# read all content to the end
+all_content = filestream.read()
+
+filestream.close()
+
+# Working with JSON
+import json
+
+json.load(filestream)
+
+# filter list
+[s for s in number_string if {condition_here}]
+
+# split by multiple delimeters
+import re
+re.split(';|,',str)
