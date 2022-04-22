@@ -19,3 +19,7 @@ json.load(filestream)
 # split by multiple delimeters
 import re
 re.split(';|,',str)
+
+# find string in a string
+s.index('needle') # returns exception when not found
+s.find('needle') # returns -1 when not found
