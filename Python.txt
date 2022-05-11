@@ -23,3 +23,8 @@ re.split(';|,',str)
 # find string in a string
 s.index('needle') # returns exception when not found
 s.find('needle') # returns -1 when not found
+
+# multiple character repalcement
+s = "abc&def#ghi"
+print(s.translate(str.maketrans({'&': '\&', '#': '\#'})))
+# prints abc\&def\#ghi
