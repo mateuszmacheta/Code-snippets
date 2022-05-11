@@ -28,3 +28,5 @@ s.find('needle') # returns -1 when not found
 s = "abc&def#ghi"
 print(s.translate(str.maketrans({'&': '\&', '#': '\#'})))
 # prints abc\&def\#ghi
+# can be done without dictionary
+str.maketrans("aeiou", "12345")
