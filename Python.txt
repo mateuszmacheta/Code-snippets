@@ -30,3 +30,12 @@ print(s.translate(str.maketrans({'&': '\&', '#': '\#'})))
 # prints abc\&def\#ghi
 # can be done without dictionary
 str.maketrans("aeiou", "12345")
+
+# regex replace characters
+re.sub(pattern, repl, string, count=0, flags=0)
+
+# regex find all matches
+re.findall(pattern, string, flags=0)
+
+# regex split
+re.split(pattern, string, maxsplit=0, flags=0)
