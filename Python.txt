@@ -39,3 +39,11 @@ re.findall(pattern, string, flags=0)
 
 # regex split
 re.split(pattern, string, maxsplit=0, flags=0)
+
+# measure performance - time
+import time
+
+tic = time.perf_counter()
+# some code here
+toc = time.perf_counter()
+print(f"Code executed in {toc - tic:0.4f} seconds")
