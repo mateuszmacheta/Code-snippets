@@ -3,3 +3,13 @@
 $sw = [system.diagnostics.stopwatch]::StartNew()
 # ... put script that you measure execution time here ...
 Write-Host "Finished after $($sw.Elapsed.TotalMinutes) minutes"
+
+# encode script in base64
+
+[Convert]::ToBase64String([Text.Encoding]::Unicode.GetBytes("Sleep 5;Get-Process 'notepad' | Stop-Process"))
+
+# then you can run it with following command
+# powershell.exe -EncodedCommand <here put encoded commands>
+
+# decode script in base64
+[System.Text.Encoding]::Unicode.GetString([System.Convert]::FromBase64String($ENCODED))
