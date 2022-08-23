@@ -47,3 +47,17 @@ tic = time.perf_counter()
 # some code here
 toc = time.perf_counter()
 print(f"Code executed in {toc - tic:0.4f} seconds")
+
+# DateTime formatting
+# https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior
+from datetime import datetime
+
+now = datetime.now() # current date and time
+
+date_time = now.strftime("%m/%d/%Y, %H:%M:%S")
+print("date and time:",date_time)
+# date and time: 12/24/2018, 04:59:31
+
+# from string to DateTime
+date_string = "21 June, 2018"
+date_object = datetime.strptime(date_string, "%d %B, %Y")
