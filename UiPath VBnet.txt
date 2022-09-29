@@ -30,3 +30,6 @@ System.Linq.Enumerable.Count(Of UiElement)(listEntries)
 
 --- Create list of integers ---
 Enumerable.Range(0, 9) // creates list of integers: 0, 1, 2, 3, 4, 5, 6, 7, 8
+
+--- Get variable for purpose of For Each Email/In emails from field in Use Desktop Outlook App of UiPath.Mail.Activities ---
+Outlook.Folder(inboxName)
