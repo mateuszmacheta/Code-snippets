@@ -3,11 +3,7 @@ row(0).ToString.Split("/",StringSplitOptions.None)
 someString.Split("/"c)
 
 --- Format date ---
-
 DateTime.ParseExact(io_extractData.Rows(0)("date").ToString,"yyyy.MM.dd",System.Globalization.CultureInfo.InvariantCulture)
-
---- Secure String to String ---
-(new System.Net.NetworkCredential("",securePassword.ToString) ).Password
 
 ---- Taking specific element from DataTable ---
 DataTable.Rows(rowIndex)(columnIndex)
@@ -33,3 +29,6 @@ Enumerable.Range(0, 9) // creates list of integers: 0, 1, 2, 3, 4, 5, 6, 7, 8
 
 --- Get variable for purpose of For Each Email/In emails from field in Use Desktop Outlook App of UiPath.Mail.Activities ---
 Outlook.Folder(inboxName)
+
+--- Package name containing is True / is False activity that is useful for Retry Scope ---
+Microsoft.Activities "Workflow Manager Activities"
