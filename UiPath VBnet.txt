@@ -32,3 +32,6 @@ Outlook.Folder(inboxName)
 
 --- Package name containing is True / is False activity that is useful for Retry Scope ---
 Microsoft.Activities "Workflow Manager Activities"
+
+--- Mock in_Config dictionary ---
+new Dictionary(Of String, Object) From { {"shortDelay", 3}, {"URL", "https://google.com"} }
