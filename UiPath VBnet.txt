@@ -30,8 +30,5 @@ Enumerable.Range(0, 9) // creates list of integers: 0, 1, 2, 3, 4, 5, 6, 7, 8
 --- Get variable for purpose of For Each Email/In emails from field in Use Desktop Outlook App of UiPath.Mail.Activities ---
 Outlook.Folder(inboxName)
 
---- Package name containing is True / is False activity that is useful for Retry Scope ---
-Microsoft.Activities "Workflow Manager Activities"
-
 --- Mock in_Config dictionary ---
 new Dictionary(Of String, Object) From { {"shortDelay", 3}, {"URL", "https://google.com"} }

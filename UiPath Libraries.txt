@@ -1,0 +1,5 @@
+--- Package name containing is True / is False activity that is useful for Retry Scope ---
+Microsoft.Activities "Workflow Manager Activities"
+
+--- Package for getting active XAML file name ---
+Alphabet.Workflow.Activities
