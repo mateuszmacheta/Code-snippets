@@ -32,3 +32,6 @@ Outlook.Folder(inboxName)
 
 --- Mock in_Config dictionary ---
 new Dictionary(Of String, Object) From { {"shortDelay", 3}, {"URL", "https://google.com"} }
+
+--- Mock queue item ---
+New QueueItem With { .SpecificContent = New Dictionary(Of String, Object) From { {"folderPath", "C:\Users\"}, {"templateType", "locationChange"} } }

@@ -5,9 +5,10 @@
 $queryString = (New-Object System.DirectoryServices.DirectoryEntry ("LDAP://RootDSE")).Properties["defaultNamingContext"][0]
 $queryString = "LDAP://" + $queryString
 
-$dn = New-Object System.DirectoryServices.DirectoryEntry ($queryString, "<USERNAME>", "<PASSWORD>")
 
-$user2Find = "<email address of user to search for>"
+$dn = New-Object System.DirectoryServices.DirectoryEntry ($queryString)
+
+$user2Find = "someemail@domain.com"
 $Rech = new-object System.DirectoryServices.DirectorySearcher($dn)
 $Rech.filter = "((mail=$user2Find))"
 $Rech.SearchScope = "subtree"

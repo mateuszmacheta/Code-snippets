@@ -3,3 +3,6 @@ diskmgmt.msc
 
 # user management utility
 lusrmgr.msc
+
+# create sample file of a given size
+fsutil file createnew .\10mb-testfile.txt 10485760

@@ -1,2 +1,16 @@
 # flexible date time parsing according to specific culture
 DateTime.Parse(adjustedDate, CultureInfo.CreateSpecificCulture("en-GB"))
+
+# anonymous types
+var rowWithIndex = dtReport.AsEnumerable().Select((row, index) => new { r = row, i = index }).Where(e => e.r["ID"].ToString() == idHash).First();
+
+# to and from base64 encoded string <> regular string
+public static string Base64Encode(string plainText) {
+  var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
+  return System.Convert.ToBase64String(plainTextBytes);
+}
+
+public static string Base64Decode(string base64EncodedData) {
+  var base64EncodedBytes = System.Convert.FromBase64String(base64EncodedData);
+  return System.Text.Encoding.UTF8.GetString(base64EncodedBytes);
+}
