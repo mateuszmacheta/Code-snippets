@@ -1,0 +1,11 @@
+# Log viewer Workspace settings
+
+{
+    "logViewer.watch": [
+        {
+            "title": "Some execution logs on some hostname",
+            "pattern": "\\\\hostname\\Logs\\*_Execution.log"
+        }
+    ]
+
+}
