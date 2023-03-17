@@ -1,2 +1,6 @@
 # nice log display
 git config --global alias.lga  'log --graph --abbrev-commit --pretty=format:"%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset" --all'
+
+# reset state to newest commit and remove any new files
+git reset HEAD --hard
+git clean -fd
