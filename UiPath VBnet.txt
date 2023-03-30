@@ -39,3 +39,10 @@ New QueueItem With { .SpecificContent = New Dictionary(Of String, Object) From {
 --- Source Workflow name (i.e. "C:\RPA\Project\WorkflowA.xaml") for an Exception ---
 ### Note that exception variable appears in expression twice ###
 someSystemException.Data("FaultedDetails").GetType().GetProperty("WorkflowFile").GetValue(someSystemException.Data("FaultedDetails"), Nothing).ToString()
+
+--- Working with JSON ---
+--- Creating Dictionary(Of String, String) from a simple JSON where all values are strings:
+jsonObject.ToObject(Of Dictionary(Of String, String))
+
+--- Encode string to JSON format - escapes all characters that need to be escaped ---
+Newtonsoft.Json.JsonConvert.SerializeObject(stringVariable)
