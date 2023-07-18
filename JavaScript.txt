@@ -1,0 +1,2 @@
+// run in Chrome Dev Console to freeze browser elements. Useful for elements appearing on hover
+setTimeout(() => { debugger; }, 5000)
