@@ -21,4 +21,4 @@ function Lock-Session
 }
 
 # minified version for copying
-$s=New-Object -C wscript.shell;while(1){$s.SendKeys('{F15}');(Get-Date -F 'yyyy-MM-dd HH:mm:ss')+' Sending F15 key';sleep 5}
+$s=New-Object -C wscript.shell;while(1){$s.SendKeys('{F15}');(Get-Date -F 'yyyy-MM-dd HH:mm:ss')+' Sending F15 key';sleep 120}
