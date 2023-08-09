@@ -41,8 +41,20 @@ New QueueItem With { .SpecificContent = New Dictionary(Of String, Object) From {
 someSystemException.Data("FaultedDetails").GetType().GetProperty("WorkflowFile").GetValue(someSystemException.Data("FaultedDetails"), Nothing).ToString()
 
 --- Working with JSON ---
+--- most of these require importing requires Newtonsoft.Json ---
 --- Creating Dictionary(Of String, String) from a simple JSON where all values are strings:
 jsonObject.ToObject(Of Dictionary(Of String, String))
+
+--- Building JSON Object
+Body =
+JObject.FromObject(
+	New With {
+		key .model=”text-davinci-003",
+		key .prompt= in_param1,
+		key .max_tokens=in_param2,
+		key .temperature= 0
+	}
+)
 
 --- Encode string to JSON format - escapes all characters that need to be escaped ---
 Newtonsoft.Json.JsonConvert.SerializeObject(stringVariable)
