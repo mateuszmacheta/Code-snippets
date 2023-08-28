@@ -14,3 +14,7 @@ public static string Base64Decode(string base64EncodedData) {
   var base64EncodedBytes = System.Convert.FromBase64String(base64EncodedData);
   return System.Text.Encoding.UTF8.GetString(base64EncodedBytes);
 }
+
+
+# e-mail validation - if e-mail is not valid then it'll throw an excetption when creating new instance of MailAddress
+New System.Net.Mail.MailAddress(potentialEmail)
