@@ -58,3 +58,6 @@ JObject.FromObject(
 
 --- Encode string to JSON format - escapes all characters that need to be escaped ---
 Newtonsoft.Json.JsonConvert.SerializeObject(stringVariable)
+
+--- Function to convert Excel column index to column letter ---
+UiPath.Excel.Helpers.ExcelUtilities.ConvertColumnIndexToColumnLetter(1)
